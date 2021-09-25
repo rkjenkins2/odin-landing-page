@@ -7,7 +7,6 @@ html,body {
     padding:0;
 }
 
-
 .header {
     padding-left: 150px;
     padding-right: 150px;
@@ -26,34 +25,10 @@ html,body {
     max-width: 200px;
 }
 
-.believe {
-    max-width: 400px;
-    flex-shrink: 1;
-}
-
-.header-content {
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-.main-left {
-    flex-basis: 300px;
-    flex-grow: 1;
-}
-
-button {
-    background-color: #3882F6;
-    color: white;
-    font: medium;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-}
-
 ul {
     list-style-type: none;
     display: inline-flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 a:link, 
@@ -67,6 +42,31 @@ a:hover {
     text-decoration: underline;
 }
 
+.header-content {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+.main-left {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+button {
+    background-color: #35469f;
+    color: white;
+    font: medium;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+}
+
+.believe {
+    max-width: 400px;
+    flex-shrink: 1;
+}
+
 .block-one {
     background-color: white;
     color: black;
@@ -75,6 +75,27 @@ a:hover {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 50px;
+}
+
+.soccer-balls {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.soccer-ball-pic {
+    max-width: 100px;
+}
+
+.ball-text {
+    max-width: 100px;
+    color: black;
+}
+
+.ball-text:hover {
+    color: #35469f;
+    text-decoration: underline;
 }
 
 .block-two {
@@ -100,22 +121,11 @@ a:hover {
     padding-right: 150px;
 }
 
-.soccer-balls {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.soccer-ball-pic {
-    max-width: 100px;
-}
-
 .modal {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #3882f6;
+    background-color: #35469f;
     border-radius: 10px;
     padding-top: 20px;
     padding-left: 100px;
@@ -144,9 +154,12 @@ a:hover {
 }
 
 button:hover {
-    background-color: #91b7f5;
+    background-color: #f0cb5d;
+    /* why doesn't the text color change to black for the modal button? */
+    color: black;
     cursor: pointer;
 }
+
 
 .footer {
     background-color: #1f2937;
