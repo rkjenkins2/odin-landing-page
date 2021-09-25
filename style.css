@@ -94,7 +94,6 @@ a:hover {
 }
 
 .block-three {
-    /* border: yellow 2px solid; */
     background-color: white;
     color: black;
     padding-left: 150px;
@@ -113,6 +112,8 @@ a:hover {
 }
 
 .modal {
+    display: flex;
+    flex-direction: column;
     background-color: #3882f6;
     border-radius: 10px;
     padding-top: 20px;
@@ -122,10 +123,13 @@ a:hover {
     margin-top: 60px;
     margin-bottom: 60px;
     color: white; 
+    box-shadow: 5px 5px rgb(31, 31, 31);
 }
 
-#modal-button {
+.modal-button {
     border: white 2px solid;
+    align-self: flex-end;
+    max-width: 100px;
 }
 
 button:hover {
