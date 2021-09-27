@@ -17,6 +17,8 @@ html,body {
 .nav-bar,
 .header-content {
     display: flex;
+    flex: 1;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
